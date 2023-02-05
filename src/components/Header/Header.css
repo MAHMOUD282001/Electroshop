@@ -1,0 +1,13 @@
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #0a1930;
+}
+
+header h2{
+    color: #fff;
+}
+
+header h2 span{
+    color: #ff7722;
+}
