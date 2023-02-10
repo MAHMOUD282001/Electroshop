@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Electroshop/static/css/main.73d7fd26.css",
+    "main.js": "/Electroshop/static/js/main.c57642f1.js",
+    "static/js/787.40c1d0ce.chunk.js": "/Electroshop/static/js/787.40c1d0ce.chunk.js",
+    "static/media/register.png": "/Electroshop/static/media/register.c63eced99fcb38972a6c.png",
+    "static/media/forgot.png": "/Electroshop/static/media/forgot.cfba148d722f088aeddb.png",
+    "static/media/login.png": "/Electroshop/static/media/login.78ccab5e2cbeadd1d2f2.png",
+    "index.html": "/Electroshop/index.html",
+    "main.73d7fd26.css.map": "/Electroshop/static/css/main.73d7fd26.css.map",
+    "main.c57642f1.js.map": "/Electroshop/static/js/main.c57642f1.js.map",
+    "787.40c1d0ce.chunk.js.map": "/Electroshop/static/js/787.40c1d0ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73d7fd26.css",
+    "static/js/main.c57642f1.js"
+  ]
+}
