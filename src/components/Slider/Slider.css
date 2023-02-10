@@ -1,0 +1,132 @@
+.slider{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-dark);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.slider .slide img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .left-arrow, .slider .right-arrow  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border:  1px solid #ff7722;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.slider .left-arrow{
+    left: 10px;
+}
+
+.slider .right-arrow{
+    right: 10px;
+}
+
+.slider svg{
+    color: #ff7722;
+    font-size: 1.7rem;
+}
+
+.slider .content{
+    position: absolute;
+    text-align: center;
+    top: 23rem;
+    left: 50%;
+    z-index: 20000;
+    opacity: 0;
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.slider .content h2{
+    font-size : 4rem
+}
+
+.slider .content p, .slider .content h2{
+    color: #fff!important;
+}
+
+.slider .content button{
+    font-size: 1.5rem;
+}
+
+.hr{
+    width: 50%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.current {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+.current .content {
+    opacity: 1;
+}
+
+.slider .content > * {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+@keyframes slide-up {
+    0% {
+      visibility: visible;
+      top: 23rem;
+    }
+    100% {
+      visibility: visible;
+      top: 17rem;
+    }
+}
+
+@media(max-width:600px) {
+    .slider .content{
+        width: 70%;
+    }
+    
+    .slider .content h2{
+        font-size: 2.5rem;
+    }
+    
+    .slider .content p{
+        font-size: 1.2rem;
+    }
+    
+    .slider .content button{
+        font-size: 1.4rem;
+    }
+}

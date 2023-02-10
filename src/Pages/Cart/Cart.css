@@ -1,0 +1,71 @@
+.cart{
+    min-height: 90vh;
+}
+
+.cart img{
+    width: 70px;
+}
+
+.cart td{
+    height: 100px;
+}
+
+.cart td div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart .plus, .cart .minus {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: #ff7722;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.cart .price {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.cart .delete {
+    cursor: pointer;
+}
+
+.cart__subtotal h6{
+    font-size: 2rem;
+}
+
+.cart__subtotal button{
+    background-color: #ff7722;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 3.5rem;
+}
+
+.cart__subtotal button:hover{
+    color: #ff7722;
+    border: 1px solid #ff7722;
+    background: none;
+}
+
+.cart__subtotal h6{
+    margin-bottom: 2rem;
+}
+
+.cart__subtotal p{
+    margin-bottom: 2rem;
+}
+
+@media(max-width:373px){
+    .cart__subtotal button:nth-of-type(1){
+        margin-bottom: 2rem;
+    }
+}

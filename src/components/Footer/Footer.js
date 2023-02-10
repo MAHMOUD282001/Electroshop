@@ -1,10 +1,12 @@
 import React from "react";
-
+import "./Footer.css"
 const Footer = () => {
+  let date = new Date()
+  let year = date.getFullYear()
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer>
+      <p>&copy; {year} All Rights Reserved to Mahmoud Khallaf</p>
+    </footer>
   );
 };
 

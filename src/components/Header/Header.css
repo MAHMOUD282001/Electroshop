@@ -3,11 +3,132 @@ header{
     height: 70px;
     background-color: #0a1930;
 }
+.header__shrink{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #0a1930;
+    z-index: 99999;
+    box-shadow: 5px 5px 15px -5px #0a1930;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 header h2{
-    color: #fff;
+    color: #ff7722;
+    line-height: 70px;
 }
 
 header h2 span{
-    color: #ff7722;
+    color: #fff;
+}
+
+header .logo{
+    width: 30%;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+header nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav .menu .logo{
+    display: none;
+    width: unset;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+header nav .header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+header .menu-icon{
+    width: 10%;
+    display: none;
+}
+
+header .menu-icon svg{
+    font-size: 1.7rem!important;
+    cursor: pointer;
+}
+
+header .nav__active{
+    border-bottom: 2px solid #ff7722;
+}
+
+@media(max-width:767px){
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .53);
+        z-index: 9999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        display: none;
+    }
+    
+    header nav.active{
+        display: block;
+    }
+    
+    header nav .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px!important;
+        height: 100%;
+        background-color: #0a1930;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: flex-start!important;
+    }
+    
+    header nav .menu .logo{
+        display: block;
+    }
+    
+    header nav ul{
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        padding-left: 0;
+    }
+    
+    header nav .header-right{
+        flex-direction: column;
+    }
+    
+    header .menu-icon{
+        color: #fff!important;
+        z-index: 99999;
+        display: flex;
+    }
 }

@@ -1,0 +1,87 @@
+.card{
+    height: 400px;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.img{
+    height: 70%;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.img img:hover{
+    transform: scale(.8);
+}
+
+.card .details{
+    margin-top: 1.5rem;
+}
+
+.card .details .price{
+    color: #ff7722;
+    font-weight: 500;
+}
+
+.card .details .title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+
+.card .details button{
+    background-color: #ff7722;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 3.5rem;
+}
+
+.card .details button:hover{
+    color: #ff7722;
+    border: 1px solid #ff7722;
+    background: none;
+}
+
+.details-img{
+    min-width: 300px;
+}
+
+.details-img img{
+    width: 100%;
+}
+
+.details-product p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #ff7722;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.details-product p span{
+    color: #0a1930;
+    font-size: 2rem;
+}
+
+.details-product button{
+    background-color: #ff7722;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 3.5rem;
+}
+
+.details-product button:hover{
+    color: #ff7722;
+    border: 1px solid #ff7722;
+    background: none;
+}

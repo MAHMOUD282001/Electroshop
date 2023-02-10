@@ -1,0 +1,68 @@
+.products a{
+    color: #333!important;
+}
+
+.filter-content {
+    cursor: pointer;
+    min-height: 80vh;
+}
+
+.filter-content p{
+    padding-left: 5px;
+}
+
+.filter-content hr{
+    color: #333;
+}
+
+.cat__active{
+    border-left: 3px solid #333;
+}
+
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+
+.count .count-icon{
+    background-color: #0a1930;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count .count-icon svg{
+    font-size: 15px;
+}
+
+.count .count-number{
+    font-size: 1.5rem;
+}
+
+.search{
+    border: 1px solid #999;
+    width: 190px;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+@media(max-width:767px){
+    .search{
+        width: 100%;
+    }
+}

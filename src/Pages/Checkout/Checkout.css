@@ -1,0 +1,57 @@
+.checkout{
+    height: 85vh;
+}
+
+.checkout-form{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.checkout-form input{
+    width: 100%;
+    background: transparent;
+    padding: 7px 20px;
+    border: none;
+    border-bottom: 1px solid #212245b6;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.checkout-bill {
+    background-color: #fde4e4;
+    padding: 30px;
+}
+
+.checkout-total {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+.checkout-form button{
+    background-color: #ff7722;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 3.5rem;
+}
+
+.checkout-form button:hover{
+    color: #ff7722;
+    border: 1px solid #ff7722;
+    background: none;
+}
+
+@media(max-width:767px){
+    
+    .checkout-bill{
+        margin-top: 40px;
+    }
+    
+    .checkout-bill h6{
+        font-size: .9rem;
+    }
+}
